@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>3476099839-rbkbhv5vgt68ma7k1ie5f6qfaq28032r.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.3476099839-rbkbhv5vgt68ma7k1ie5f6qfaq28032r</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDWwKk1DWzQmJsN8ZROfDnJXfTNPs7yBSM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>3476099839</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>vn.at.app.kiti</string>
+	<key>PROJECT_ID</key>
+	<string>kiti-24-07-2022</string>
+	<key>STORAGE_BUCKET</key>
+	<string>kiti-24-07-2022.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:3476099839:ios:e8761fecea463dacd8b2ca</string>
+	<key>DATABASE_URL</key>
+	<string>https://kiti-24-07-2022-default-rtdb.asia-southeast1.firebasedatabase.app</string>
+</dict>
+</plist>

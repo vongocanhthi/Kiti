@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "3476099839",
+    "firebase_url": "https://kiti-24-07-2022-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "kiti-24-07-2022",
+    "storage_bucket": "kiti-24-07-2022.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:3476099839:android:2fc6acf3c16391b5d8b2ca",
+        "android_client_info": {
+          "package_name": "vn.at.app.kiti"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "3476099839-3r2pv6ojefjnhc16p1p8c1lbuaguh8gj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.at.app.kiti",
+            "certificate_hash": "537cbc5c01d5e8554a5c5cc68d3a1479d241d4d4"
+          }
+        },
+        {
+          "client_id": "3476099839-hm3jl2an7ahdrnu7us54sugo45gg8r79.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7wxNmzgiUXwlWVgFNkxTo5QPyRV-kU70"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "3476099839-hm3jl2an7ahdrnu7us54sugo45gg8r79.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "3476099839-d73nmb1aebgc13mttsglmgovkpgqk0ck.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.at.kiti"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
