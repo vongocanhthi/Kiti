@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:get_storage/get_storage.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:kiti/src/language/LocalizationService.dart';
 import 'package:kiti/ui/view/SplashPage.dart';
 import 'package:kiti/ui/viewmodel/HomeViewModel.dart';
@@ -12,6 +13,7 @@ import 'firebase_options.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  MobileAds.instance.initialize();
   await Firebase.initializeApp(
     name: Constants.APP_NAME,
     options: DefaultFirebaseOptions.currentPlatform,

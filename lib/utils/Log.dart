@@ -1,11 +1,17 @@
-class Log{
-  static final String TAG = "Kiti";
+import 'package:flutter/foundation.dart';
 
-  static void d(var string){
-    print("${TAG} Debug: ${string}");
+class Log{
+  static const String TAG = "Kiti";
+
+  static void d(dynamic d){
+    if (kDebugMode) {
+      print("$TAG Debug: $d");
+    }
   }
 
-  static void e(var string){
-    print("${TAG} Error: ${string}");
+  static void e(dynamic d){
+    if (kDebugMode) {
+      print("$TAG Error: $d");
+    }
   }
 }

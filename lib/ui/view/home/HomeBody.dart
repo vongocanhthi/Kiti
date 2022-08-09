@@ -4,6 +4,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
+import 'package:google_sign_in/google_sign_in.dart';
+import 'package:kiti/ui/view/VoucherPage.dart';
+import 'package:kiti/utils/Auth.dart';
 import 'package:provider/provider.dart';
 
 import '../../../utils/Constants.dart';
@@ -29,10 +32,16 @@ class _HomeBodyState extends State<HomeBody> {
 
   FirebaseDatabase database = FirebaseDatabase.instance;
 
+  final GoogleSignIn _googleSignIn = GoogleSignIn(
+    scopes: [
+      'email',
+      'https://www.googleapis.com/auth/contacts.readonly',
+    ],
+  );
+
   @override
   void initState() {
     super.initState();
-    Log.d(FirebaseAuth.instance.currentUser);
     startPageAnimation();
 
     // refTest();
@@ -46,6 +55,7 @@ class _HomeBodyState extends State<HomeBody> {
       child: Column(
         children: [
           SizedBox(
+            width: Utils.getScreenWidth(context),
             height: Utils.getScreenWidth(context) * 9 / 16,
             child: PageView(
               controller: _pageController,
@@ -80,6 +90,7 @@ class _HomeBodyState extends State<HomeBody> {
                       Get.to(const StepPage());
                       break;
                     case 1:
+                      Get.to(const VoucherPage());
                       break;
                     case 2:
                       break;
@@ -87,24 +98,26 @@ class _HomeBodyState extends State<HomeBody> {
                 },
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Image.asset(
                       imgList[index].icon.toString(),
                       width: 30,
                       height: 30,
                     ),
-                    Text(imgList[index].title.toString()),
+                    Text(
+                      imgList[index].title.toString(),
+                      textAlign: TextAlign.center,
+                    ),
                   ],
                 ),
               );
             },
           ),
-
           ElevatedButton(
             onPressed: () {
-              FirebaseAuth.instance
-                  .signOut()
-                  .then((value) => Get.to(const LoginPage()));
+              FirebaseAuth.instance.signOut().then((value) =>
+                  _handleSignOut().then((value) => Get.to(const LoginPage())));
             },
             child: Text("Logout"),
           ),
@@ -143,4 +156,6 @@ class _HomeBodyState extends State<HomeBody> {
       "address": {"line1": "100 Mountain View"}
     });
   }
+
+  Future<void> _handleSignOut() => _googleSignIn.disconnect();
 }

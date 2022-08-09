@@ -15,7 +15,7 @@ class Constants {
 
   static List<HomeModel> imageHomeModelList = [
     HomeModel(id: "1", icon: Images.IC_STEP, title: "Step"),
-    HomeModel(id: "2", icon: Images.IC_STEP, title: "Step"),
+    HomeModel(id: "2", icon: Images.IC_STEP, title: "Săn mã khuyến mãi"),
     HomeModel(id: "2", icon: Images.IC_STEP, title: "Step"),
   ];
 }

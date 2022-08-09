@@ -47,33 +47,33 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCIhpQk07QqUAQUMWIZo1C3dATaD-ahn28',
-    appId: '1:3476099839:web:86d87de4a13560f4d8b2ca',
-    messagingSenderId: '3476099839',
-    projectId: 'kiti-24-07-2022',
-    authDomain: 'kiti-24-07-2022.firebaseapp.com',
-    databaseURL: 'https://kiti-24-07-2022-default-rtdb.asia-southeast1.firebasedatabase.app',
-    storageBucket: 'kiti-24-07-2022.appspot.com',
-    measurementId: 'G-8BBJ96N0VW',
+    apiKey: 'AIzaSyCXLe84o_qCTEHDx7UuBQVepYinmV5Tn6s',
+    appId: '1:889753489592:web:cb85083d67df367ad1644d',
+    messagingSenderId: '889753489592',
+    projectId: 'kiti-30-07-2022',
+    authDomain: 'kiti-30-07-2022.firebaseapp.com',
+    databaseURL: 'https://kiti-30-07-2022-default-rtdb.asia-southeast1.firebasedatabase.app',
+    storageBucket: 'kiti-30-07-2022.appspot.com',
+    measurementId: 'G-3VMDG9M1KD',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyB7wxNmzgiUXwlWVgFNkxTo5QPyRV-kU70',
-    appId: '1:3476099839:android:2fc6acf3c16391b5d8b2ca',
-    messagingSenderId: '3476099839',
-    projectId: 'kiti-24-07-2022',
-    databaseURL: 'https://kiti-24-07-2022-default-rtdb.asia-southeast1.firebasedatabase.app',
-    storageBucket: 'kiti-24-07-2022.appspot.com',
+    apiKey: 'AIzaSyD5gPeHrXEpD_NP736_xrlXyt5fGcr9sHY',
+    appId: '1:889753489592:android:8bbb20e676834a7bd1644d',
+    messagingSenderId: '889753489592',
+    projectId: 'kiti-30-07-2022',
+    databaseURL: 'https://kiti-30-07-2022-default-rtdb.asia-southeast1.firebasedatabase.app',
+    storageBucket: 'kiti-30-07-2022.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDWwKk1DWzQmJsN8ZROfDnJXfTNPs7yBSM',
-    appId: '1:3476099839:ios:e8761fecea463dacd8b2ca',
-    messagingSenderId: '3476099839',
-    projectId: 'kiti-24-07-2022',
-    databaseURL: 'https://kiti-24-07-2022-default-rtdb.asia-southeast1.firebasedatabase.app',
-    storageBucket: 'kiti-24-07-2022.appspot.com',
-    iosClientId: '3476099839-rbkbhv5vgt68ma7k1ie5f6qfaq28032r.apps.googleusercontent.com',
+    apiKey: 'AIzaSyDMZfj8Y5K0xaz03VZ2xFc_5yVPQSAufyU',
+    appId: '1:889753489592:ios:f2b239e1ce2573ffd1644d',
+    messagingSenderId: '889753489592',
+    projectId: 'kiti-30-07-2022',
+    databaseURL: 'https://kiti-30-07-2022-default-rtdb.asia-southeast1.firebasedatabase.app',
+    storageBucket: 'kiti-30-07-2022.appspot.com',
+    iosClientId: '889753489592-5is2vd6ll7o4c54e5928sjbumjpjlgb7.apps.googleusercontent.com',
     iosBundleId: 'vn.at.app.kiti',
   );
 }

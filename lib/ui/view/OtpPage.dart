@@ -168,7 +168,7 @@ class _OtpBodyState extends State<OtpBody> {
                 .child(auth.currentUser!.uid)
                 .set(
                   UserModel(
-                    uid: auth.currentUser!.uid,
+                    id: auth.currentUser!.uid,
                     name: "User${Random().nextInt(9999990) + 1000}",
                     money: "0",
                     phoneNumber: phoneNumber,

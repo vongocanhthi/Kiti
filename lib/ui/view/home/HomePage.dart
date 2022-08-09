@@ -21,58 +21,63 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        leading: replaceIcon(),
-        title: replaceTitle(),
-        // centerTitle: true,
-        automaticallyImplyLeading: false,
-        // toolbarHeight: 100,
-        actions: [
-          IconButton(
-            icon: Image.asset(
-              Images.STEPBOX_COIN,
-              width: 25,
-              height: 25,
-            ),
-            onPressed: () {
-              withdrawMoney();
-            },
-          ),
-          // const Padding(padding: EdgeInsets.only(left: 5)),
-          Center(
-            child: GestureDetector(
-              onTap: () {
+    return WillPopScope(
+      onWillPop: () async {
+        return false;
+      },
+      child: Scaffold(
+        appBar: AppBar(
+          leading: replaceIcon(),
+          title: replaceTitle(),
+          // centerTitle: true,
+          automaticallyImplyLeading: false,
+          // toolbarHeight: 100,
+          actions: [
+            IconButton(
+              icon: Image.asset(
+                Images.STEPBOX_COIN,
+                width: 25,
+                height: 25,
+              ),
+              onPressed: () {
                 withdrawMoney();
               },
-              child: Text(
-                Globals.gold.toString(),
-                style: const TextStyle(fontWeight: FontWeight.bold),
+            ),
+            // const Padding(padding: EdgeInsets.only(left: 5)),
+            Center(
+              child: GestureDetector(
+                onTap: () {
+                  withdrawMoney();
+                },
+                child: Text(
+                  Globals.gold.toString(),
+                  style: const TextStyle(fontWeight: FontWeight.bold),
+                ),
               ),
             ),
-          ),
-          const Padding(padding: EdgeInsets.only(left: 20)),
-        ],
-      ),
-      body: Container(
-        padding: const EdgeInsets.all(10),
-        child: replaceBody(),
-      ),
-      bottomNavigationBar: BottomNavigationBar(
-        showSelectedLabels: true,
-        showUnselectedLabels: false,
-        items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Trang chủ"),
-          BottomNavigationBarItem(icon: Icon(Icons.task), label: "Nhiệm vụ"),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.card_giftcard), label: "Điểm danh"),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.account_circle), label: "Tài khoản"),
-        ],
-        onTap: onNavigationBar,
-        currentIndex: _selectedIndex,
-        selectedItemColor: Colors.blue,
-        unselectedItemColor: Colors.grey,
+            const Padding(padding: EdgeInsets.only(left: 20)),
+          ],
+        ),
+        body: Container(
+          padding: const EdgeInsets.all(10),
+          child: replaceBody(),
+        ),
+        bottomNavigationBar: BottomNavigationBar(
+          showSelectedLabels: true,
+          showUnselectedLabels: false,
+          items: [
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: "Trang chủ"),
+            BottomNavigationBarItem(icon: Icon(Icons.task), label: "Nhiệm vụ"),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.card_giftcard), label: "Điểm danh"),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.account_circle), label: "Tài khoản"),
+          ],
+          onTap: onNavigationBar,
+          currentIndex: _selectedIndex,
+          selectedItemColor: Colors.blue,
+          unselectedItemColor: Colors.grey,
+        ),
       ),
     );
   }
